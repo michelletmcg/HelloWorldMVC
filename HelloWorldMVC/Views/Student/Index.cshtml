@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Create Student";
+}
+
+<h2>Add a Student</h2>
+
+@*//then we are giving a form to input the student*@
+
+<p> Michelle was here </p>
+
+@if (ViewBag.StudentAdded != null && ViewBag.StudentAdded) //student added is not null and student added is true
+{
+    //this message only shows up if student added properly and message set to true
+    <h3 id="message">Student Added successfully!!</h3>
+    
+
+}
+else //I show the form
+{
+
+<form method="post">
+    <label for="sid">Student ID:</label>
+    <input type="text" name="sid" />
+    <br /> <br />
+
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" />
+    <br /> <br />
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" />
+    <br /> <br />
+
+    <label>Date of Birth</label>
+    <input type="text" name="dob" />
+    <br /> <br />
+
+    <input type="submit"  value="Add Student" />
+</form>
+}
+

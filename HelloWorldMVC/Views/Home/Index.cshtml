@@ -1,0 +1,19 @@
+﻿@{ 
+    ViewBag.Title = "Home";
+}
+<h1>Welcome to the index</h1>
+
+@*Home controller is inserted Implicitly to the URL*@
+@Html.ActionLink("Contact Page", "Contact")<br />
+
+@*Joe's Preference, specify controller explicitly*@
+@Html.ActionLink("Contact Page", "Contact", "Home")
+
+<h2>@ViewBag.Message</h2>
+
+<ul>
+    @for (int i = 1; i < 1000; i++)
+    {
+        <li>Product #@i</li>
+    }
+</ul>

@@ -1,0 +1,2 @@
+webpack optimizes JavaScript takes out whiteSpace and comments
+Audit on chrome developer tools to be able to see how fast or slow to run 
